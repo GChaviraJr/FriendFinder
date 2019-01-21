@@ -11,6 +11,6 @@ app.use(express.json());
 require(path.join(__dirname, "./app/routing/apiRoutes"))(app)
 require(path.join(__dirname, "./app/routing/htmlRoutes"))(app)
 
-app.listen(PORT, function() {
-    console.log('Server running on ' + PORT)
+app.listen(process.env.PORT || 8080, () => {
+    console.log(`App is running on port ${process.env.PORT}`)
 })
