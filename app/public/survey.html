@@ -3,161 +3,222 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="././server.js"></script>
+    
 </head>
+
 <body>
     <h1 style="margin: 10px;">Survey Questions </h1>
-    <hr/>
+    <hr />
     <h2 style="margin: 10px;">About You</h2>
-    <br/>
-    <form style="margin: 10px;">
-        Name (Required) <input type=text name="username" class="userName">
-        <br/>
-        Link to Photo Image (Required) <input type=text name="Photo Link" class="photoLink">
+    <br />
+    <form style="margin: 10px">
+        Name (Required) <input type=text placeholder="Your Name Here" id="userName">
+        <br />
+        Link to Photo Image (Required) <input type=text name="Photo Link" id="photoLink">
     </form>
 
-    <hr/>
-    <br/>
+    <hr />
+    <br />
 
-    <div >
+    <div>
         <h2 style="margin: 10px;">Question 1</h2>
         <p style="margin: 10px;">Your mind is always buzzing with unexplored ideas and plans.</p>
-        <select name="agree_disagree" class="qOne" style="margin: 10px;">
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree) </option>
+        <select name="agree_disagree" id="qOne" style="margin: 10px;">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
         </select>
-        
-        <br/>
-        
+
+        <br />
+
         <h2 style="margin: 10px;">Question 2</h2>
         <p style="margin: 10px;">Generally speaking, you rely more on your experience than your imagination.</p>
-        <select name="agree_disagree" class="qTwo" style="margin: 10px;">
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree) </option>
+        <select name="agree_disagree" id="qTwo" style="margin: 10px;" >
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
         </select>
-        
-        <br/>
-        
+
+        <br />
+
         <h2 style="margin: 10px;">Question 3</h2>
         <p style="margin: 10px;">You find it easy to stay relaxed and focused even when there is some pressure.</p>
-        <select name="agree_disagree" class="qThree" style="margin: 10px;">
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree) </option>
+        <select name="agree_disagree" id="qThree" style="margin: 10px;" >
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
         </select>
-        
-        <br/>
-        
+
+        <br />
+
         <h2 style="margin: 10px;">Question 4</h2>
         <p style="margin: 10px;">You rarely do something just out of sheer curiosity.</p>
-        <select name="agree_disagree" class="qFour" style="margin: 10px;">
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree) </option>
+        <select name="agree_disagree" id="qFour" style="margin: 10px;" >
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
         </select>
-        
-        <br/>
-        
+
+        <br />
+
         <h2 style="margin: 10px;">Question 5</h2>
         <p style="margin: 10px;">People can rarely upset you.</p>
-        <select name="agree_disagree" class="qFive" style="margin: 10px;">
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree) </option>
+        <select name="agree_disagree" id="qFive" style="margin: 10px;" >
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
         </select>
-        
-        <br/>
-        
+
+        <br />
+
         <h2 style="margin: 10px;">Question 6</h2>
         <p style="margin: 10px;">It is often difficult for you to relate to other people’s feelings.</p>
-        <select name="agree_disagree" class="qSix" style="margin: 10px;">
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5 (Strongly Agree) </option>
-                </select>
-        
-        <br/>
-        
-    <h2 style="margin: 10px;">Question 7</h2>
-    <p style="margin: 10px;">In a discussion, truth should be more important than people’s sensitivities.</p>
-    <select name="agree_disagree" class="qSeven" style="margin: 10px;">
-        <option>1 (Strongly Disagree)</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5 (Strongly Agree) </option>
-    </select>
-        
-            
-        
-    <h2 style="margin: 10px;">Question 8</h2>
-    <p style="margin: 10px;">You rarely get carried away by fantasies and ideas.        </p>
-    <select name="agree_disagree" class="qEight" style="margin: 10px;">
-        <option>1 (Strongly Disagree)</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5 (Strongly Agree) </option>
-    </select>
-            
-    <br/>
-        
-    <h2 style="margin: 10px;">Question 9</h2>
-    <p style="margin: 10px;">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
-    <select name="agree_disagree" class="qNine" style="margin: 10px;">
-        <option>1 (Strongly Disagree)</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5 (Strongly Agree) </option>
-    </select>
-        
-    <br/>
-        
-    <h2 style="margin: 10px;">Question 10</h2>
-    <p style="margin: 10px;">You feel more energetic after spending time with a group of people.        </p>
-    <select name="agree_disagree" class="qTen" style="margin: 10px;">
-        <option>1 (Strongly Disagree)</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5 (Strongly Agree) </option>
-    </select>
-            
-    <br/> 
-        
-    <button type="submit" class="btn btn-primary btn-lg submitBtn" style="margin: 10px;">Submit</button>
+        <select name="agree_disagree" id="qSix" style="margin: 10px;">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
+        </select>
+
+        <br />
+
+        <h2 style="margin: 10px;">Question 7</h2>
+        <p style="margin: 10px;">In a discussion, truth should be more important than people’s sensitivities.</p>
+        <select name="agree_disagree" id="qSeven" style="margin: 10px;">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
+        </select>
+
+
+
+        <h2 style="margin: 10px;">Question 8</h2>
+        <p style="margin: 10px;">You rarely get carried away by fantasies and ideas. </p>
+        <select name="agree_disagree" id="qEight" style="margin: 10px;">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
+        </select>
+
+        <br />
+
+        <h2 style="margin: 10px;">Question 9</h2>
+        <p style="margin: 10px;">You think that everyone’s views should be respected regardless of whether they are
+            supported by facts or not.</p>
+        <select name="agree_disagree" id="qNine" style="margin: 10px;">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
+        </select>
+
+        <br />
+
+        <h2 style="margin: 10px;">Question 10</h2>
+        <p style="margin: 10px;">You feel more energetic after spending time with a group of people.</p>
+        <select name="agree_disagree" id="qTen" style="margin: 10px;">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree) </option>
+        </select>
+
+        <br />
+
+        <button type="submit" class="btn btn-primary btn-lg" style="margin: 10px;" name="action" id="submitBtn" data-toggle="modal" data-target="#modal1">Submit</button>
+
     </div>
-    
-    <hr/>
+
+    <hr />
 
     <div style="display: flex; margin: 10px;">
-        <button type="button" class="btn btn-primary btn-sm">API Friends List</button>
+        <a href="/api/friends">
+            <button type="button" class="btn btn-primary btn-sm apiBtn">API Friends List</button>
+        </a>
         <div style="height:15px; border-right: 1px solid black; margin: 8px 10px; "></div>
-        <button type="button" class="btn btn-secondary btn-sm">GitHub Repo</button>
+        <a href="https://github.com/GChaviraJr/FriendFinder">
+            <button type="button" class="btn btn-secondary btn-sm gitHubBtn">GitHub Repo</button>
+        </a>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="modal1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Who's Your Match?!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Your matches are: </p>
+                    <p id="userMatch"></p>
+                    <img id="userMatchImage" width="200px" src="" />
+                </div>
+                <div class="modal-footer">
+                    <a href="/survey">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Survey</button>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
+    <script type="text/javascript">
+        
+            $('#submitBtn').on('click', function (event) {
+                event.preventDefault()
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+                let userInput = {
+                    name: $('#userName').val().trim(),
+                    photo: $('#photoLink').val().trim(),
+                    scores: [
+                        $('#qOne').val().trim(),
+                        $('#qTwo').val().trim(),
+                        $('#qThree').val().trim(),
+                        $('#qFour').val().trim(),
+                        $('#qFive').val().trim(),
+                        $('#qSix').val().trim(),
+                        $('#qSeven').val().trim(),
+                        $('#qEight').val().trim(),
+                        $('#qNine').val().trim(),
+                        $('#qTen').val().trim()
+                    ]
+                }
+                
+                $.post("/api/friends", userInput, function(data) {
+                        $('#userMatch').text(data.name)
+                        $("#userMatchImage").attr("src", data.photo)
+                    })
+            })
+    
+    </script>
+
 </body>
+
 </html>
